@@ -1,5 +1,13 @@
 <?php
 
+function doceria_scripts_e_estilos(): void
+{
+    wp_enqueue_style(
+        'my-custom-styles',
+        get_template_directory_uri() . '/assets/css/style.css' );
+}
+add_action('wp_enqueue_scripts', 'doceria_scripts_e_estilos');
+
 function doceria_register_nav_menu(){
     register_nav_menu('menu_principal', 'Menu Principal');
 }

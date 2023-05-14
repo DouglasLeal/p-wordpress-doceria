@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Pacifico&display=swap");
+.navbar {
+    background-color: #a83a40 !important;
+    border-bottom: 3px solid #e8c204;
+}
+.navbar .navbar-brand img {
+    width: 125px;
+}
+.navbar .navbar-toggler {
+    border: 3px solid #e8c204;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.navbar .navbar-toggler span {
+    display: block;
+    background-color: #e8c204;
+    height: 3px;
+    width: 50%;
+}
+.navbar .navbar-collapse {
+    margin-top: 25px;
+}
+.navbar .nav-link {
+    text-align: center;
+    color: #fff;
+    font-family: "Delius Swash Caps", cursive;
+    font-size: 1.25rem;
+    transition: background-color 0.5s;
+}
+.navbar .nav-link:hover {
+    background-color: #e8c204;
+}
+.navbar .nav-link.active {
+    background-color: #e8c204;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar .navbar-toggler {
+        display: none;
+    }
+    .navbar .navbar-collapse {
+        margin-top: 0;
+    }
+    .navbar .nav-link {
+        padding: 55px;
+    }
+}
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+    background-color: #a83a40;
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel .carousel-control-prev, .carousel .carousel-control-next {
+        width: 150px;
+    }
+    .carousel img {
+        height: 75vh;
+    }
+    .carousel .carousel-indicators button.active {
+        background-color: #a83a40;
+    }
+}
+.boas-vindas {
+    position: relative;
+    background-color: rgba(232, 194, 4, 0.9);
+    padding: 75px 0;
+    color: #a83a40;
+}
+.boas-vindas .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg-bolos.png");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.boas-vindas .boas-vindas-titulo {
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.boas-vindas .boas-vindas-texto {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .boas-vindas .boas-vindas-titulo {
+        font-size: 5rem;
+        text-align: right;
+        line-height: 1.5;
+    }
+    .boas-vindas .boas-vindas-texto {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+.produtos {
+    padding: 75px 0;
+}
+.produtos .produto-item {
+    position: relative;
+}
+.produtos .produto-item-conteudo {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Pacifico", cursive;
+    font-size: 5rem;
+    transition: opacity 0.5s;
+    cursor: default;
+}
+.produtos .produto-item-conteudo-primary {
+    background-color: rgba(168, 58, 64, 0.75);
+    color: #e8c204;
+}
+.produtos .produto-item-conteudo-secondary {
+    background-color: rgba(232, 194, 4, 0.75);
+    color: #a83a40;
+}
+.produtos .produto-item:hover .produto-item-conteudo {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos .produto-item-conteudo {
+        opacity: 0;
+    }
+}
+main.sobre {
+    padding: 75px 0;
+}
+main.sobre h1 {
+    font-family: "Pacifico", cursive;
+    color: #e8c204;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    border-bottom: 3px dashed #a83a40;
+}
+main.sobre p {
+    font-size: 1.5rem;
+}
+main.sobre p span {
+    font-weight: 700;
+    color: #a83a40;
+}
+
+main.produtos {
+    padding: 75px 0;
+}
+main.produtos h1 {
+    font-family: "Pacifico", cursive;
+    color: #e8c204;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    border-bottom: 3px dashed #a83a40;
+}
+main.produtos .produto-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+main.produtos .produto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main.produtos .produto-item img {
+    width: 50%;
+    border-radius: 100%;
+    border: 5px solid #a83a40;
+}
+main.produtos .produto-item h2 {
+    font-family: "Pacifico", cursive;
+    color: #a83a40;
+    border-bottom: 3px dashed #e8c204;
+}
+main.produtos .produto-item p {
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+    main.produtos .produto-item {
+        flex-direction: row;
+        gap: 50px;
+    }
+    main.produtos .produto-item img {
+        width: 33%;
+    }
+    main.produtos .produto-item-reverse {
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+    main.produtos .produto-item-reverse img {
+        width: 33%;
+    }
+}
+main.contato {
+    padding: 75px 0;
+}
+main.contato h1 {
+    font-family: "Pacifico", cursive;
+    color: #e8c204;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    border-bottom: 3px dashed #a83a40;
+}
+main.contato h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    color: #a83a40;
+    margin-bottom: 10px;
+}
+main.contato .telefone-itens {
+    margin-bottom: 50px;
+}
+main.contato .telefone-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main.contato .telefone-item i {
+    font-size: 2rem;
+    color: #e8c204;
+}
+main.contato .telefone-item span {
+    font-size: 1.5rem;
+}
+main.contato .social-itens {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+main.contato .social-item {
+    color: #e8c204;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+main.contato .social-item i {
+    font-size: 3rem;
+}
+main.contato .social-item:hover {
+    color: #a83a40;
+}
+main.contato form .btn-primary {
+    background-color: #a83a40;
+    border-color: #a83a40;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+main.contato form .btn-primary:active {
+    background-color: #953339;
+    border-color: #a83a40;
+}
+main.contato form .form-control {
+    border-color: #e8c204;
+}
+main.contato form .form-control:focus {
+    box-shadow: 0px 0px 5px 1px #a83a40;
+}
+
+footer {
+    color: #fff;
+    background-color: #a83a40;
+}
+footer .info {
+    padding: 75px 0;
+}
+footer .info .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+footer .info img {
+    width: 50%;
+}
+footer .contatos h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #e8c204;
+}
+footer .contato-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+}
+footer .contato-item i {
+    font-size: 2rem;
+    color: #e8c204;
+    color: #e8c204;
+}
+footer .copy {
+    background-color: #822d32;
+    padding: 25px 0;
+    text-align: center;
+}
+footer .copy p {
+    margin-bottom: 0;
+}
+footer .copy .empresa {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+footer .copy .empresa span {
+    font-weight: 700;
+    font-family: "Pacifico", cursive;
+    font-size: 1.25rem;
+}
+footer .copy .dev {
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+}
+footer .copy .dev span {
+    font-weight: 700;
+}
+footer .copy .dev:hover span {
+    color: #e8c204;
+}
+
+@media screen and (min-width: 1024px) {
+    footer .info .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .info img {
+        width: 250px;
+    }
+}
