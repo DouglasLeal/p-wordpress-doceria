@@ -294,10 +294,15 @@ footer .info .container {
     justify-content: center;
     gap: 50px;
 }
+footer .navbar-brand{
+    text-align: center;
+}
+
 footer .img-logo {
     width: 50%;
     height: 50%;
 }
+
 footer .contatos h3 {
     text-align: center;
     margin-bottom: 25px;
