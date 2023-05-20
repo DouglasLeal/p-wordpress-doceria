@@ -1,7 +1,7 @@
 <footer>
     <div class="info">
         <div class="container">
-            <img src="./assets/img/logo.png" alt="logo">
+            <?= the_custom_logo(); ?>
 
             <div class="contatos">
                 <h3>Entre em contato:</h3>

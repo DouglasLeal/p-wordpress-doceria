@@ -16,4 +16,9 @@ add_action('after_setup_theme', 'doceria_register_nav_menu');
 function doceria_register_navwalker(){
     require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
-add_action( 'after_setup_theme', 'doceria_register_navwalker' );
+add_action( 'after_setup_theme', 'doceria_register_navwalker');
+
+function doceria_custom_logo(){
+    add_theme_support('custom-logo', [null]);
+}
+add_action('after_setup_theme', 'doceria_custom_logo');

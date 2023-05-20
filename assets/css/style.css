@@ -4,7 +4,7 @@
     border-bottom: 3px solid #e8c204;
 }
 .navbar .navbar-brand img {
-    width: 125px;
+    width: 125px !important;
 }
 .navbar .navbar-toggler {
     border: 3px solid #e8c204;
