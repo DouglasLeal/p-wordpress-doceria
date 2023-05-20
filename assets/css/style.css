@@ -18,7 +18,7 @@
     align-items: center;
     gap: 5px;
 }
-.navbar .navbar-toggler span {
+.navbar .navbar-toggler .navbar-toggler-icone {
     display: block;
     background-color: #e8c204;
     height: 3px;
