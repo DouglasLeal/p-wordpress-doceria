@@ -3,8 +3,9 @@
     background-color: #a83a40 !important;
     border-bottom: 3px solid #e8c204;
 }
-.navbar .navbar-brand img {
-    width: 125px !important;
+.navbar .img-logo {
+    width: 125px;
+    height: 125px;
 }
 .navbar .navbar-toggler {
     border: 3px solid #e8c204;
@@ -293,8 +294,9 @@ footer .info .container {
     justify-content: center;
     gap: 50px;
 }
-footer .info img {
+footer .img-logo {
     width: 50%;
+    height: 50%;
 }
 footer .contatos h3 {
     text-align: center;
@@ -311,7 +313,6 @@ footer .contato-item {
 }
 footer .contato-item i {
     font-size: 2rem;
-    color: #e8c204;
     color: #e8c204;
 }
 footer .copy {

@@ -22,3 +22,11 @@ function doceria_custom_logo(){
     add_theme_support('custom-logo', [null]);
 }
 add_action('after_setup_theme', 'doceria_custom_logo');
+
+function doceria_change_logo_class($html){
+    $html = str_replace( 'custom-logo', 'img-logo', $html );
+    $html = str_replace( 'img-logo-link', 'navbar-brand', $html );
+
+    return $html;
+}
+add_filter('get_custom_logo', 'doceria_change_logo_class');
