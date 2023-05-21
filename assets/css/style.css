@@ -160,10 +160,6 @@ main.sobre h1 {
 main.sobre p {
     font-size: 1.5rem;
 }
-main.sobre p span {
-    font-weight: 700;
-    color: #a83a40;
-}
 
 main.produtos {
     padding: 75px 0;
