@@ -30,3 +30,48 @@ function doceria_change_logo_class($html){
     return $html;
 }
 add_filter('get_custom_logo', 'doceria_change_logo_class');
+
+function doceria_metabox_contato()
+{
+    global $post;
+
+    if("page-contato.php" == get_post_meta($post->ID, '_wp_page_template', true)){
+        add_meta_box(
+            'doceria_metabox_contato',
+            'Telefones:',
+            'doceria_callback_contato',
+            'page'
+        );
+    }
+}
+add_action('add_meta_boxes', 'doceria_metabox_contato');
+
+function doceria_callback_contato($post)
+{
+    $telefone = get_post_meta($post->ID, '_telefone', true);
+    $whatsapp = get_post_meta($post->ID, '_whatsapp', true);
+    ?>
+    <label for="texto_home_1">Telefone</label>
+    <input type="text" name="telefone" style="width: 100%" value="<?= $telefone ?>"/>
+    <br>
+    <br>
+    <label for="texto_home_2">Whatsapp</label>
+    <input type="text" name="whatsapp" style="width: 100%" value="<?= $whatsapp ?>"/>
+    <?php
+}
+
+function doceria_salvando_dados_metabox_contato($post_id)
+{
+    foreach ($_POST as $key => $value) {
+        if ($key !== 'telefone' && $key !== 'whatsapp') {
+            continue;
+        }
+
+        update_post_meta(
+            $post_id,
+            '_' . $key,
+            $_POST[$key]
+        );
+    }
+}
+add_action('save_post', 'doceria_salvando_dados_metabox_contato');

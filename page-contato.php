@@ -15,14 +15,14 @@
                                 <div class="col-sm-12 col-lg-6">
                                     <p class="telefone-item">
                                         <i class="fa-solid fa-phone"></i>
-                                        <span>(21) 1234-5678</span>
+                                        <span><?= get_post_meta(get_the_ID(), '_telefone', true); ?></span>
                                     </p>
                                 </div>
 
                                 <div class="col-sm-12 col-lg-6">
                                     <p class="telefone-item">
                                         <i class="fa-brands fa-whatsapp"></i>
-                                        <span>(21) 99876-5432</span>
+                                        <span><?= get_post_meta(get_the_ID(), '_whatsapp', true); ?></span>
                                     </p>
                                 </div>
                             </div>
