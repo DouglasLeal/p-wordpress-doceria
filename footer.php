@@ -7,12 +7,12 @@
                 <h3>Entre em contato:</h3>
                 <p class="contato-item">
                     <i class="fa-solid fa-phone"></i>
-                    <span>(21) 1234-5678</span>
+                    <span><?= get_post_meta(get_the_ID(), '_telefone', true); ?></span>
                 </p>
 
                 <p class="contato-item">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <span>(21) 99876-5432</span>
+                    <span><?= get_post_meta(get_the_ID(), '_whatsapp', true); ?></span>
                 </p>
             </div>
 
